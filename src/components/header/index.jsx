@@ -1,7 +1,7 @@
 import React from "react";
 import Clock from "../clock";
 import CurrentDate from "../currentDate";
-import logo from "../../assets/bike-removebg-preview.png";
+import logo from "../../assets/logo.png";
 import "./index.css";
 
 export default function Header({ judulHeader, bgHeader, colorTitle }) {
@@ -20,8 +20,9 @@ export default function Header({ judulHeader, bgHeader, colorTitle }) {
             src={logo}
             alt=""
             style={{
-              width: 150,
+              width: 190,
               height: 60,
+              borderRadius: "10px",
             }}
             className="ms-2"
           />
@@ -32,7 +33,7 @@ export default function Header({ judulHeader, bgHeader, colorTitle }) {
               className=" mt-2  px-5 border-0   "
               style={{
                 background:
-                  "linear-gradient(90deg, rgba(93,170,189,1) 0%, rgba(189,208,212,1) 19%, rgba(197,216,224,1) 41%)",
+                  "linear-gradient(135deg, rgba(255,255,255,1) 55%, rgba(62,166,238,1) 100%)",
                 color: colorTitle,
               }}
             >
@@ -47,9 +48,7 @@ export default function Header({ judulHeader, bgHeader, colorTitle }) {
             width: "10%",
           }}
         >
-          <span className="px-3 header-date ">
-            <CurrentDate />
-          </span>
+          <span className="px-3 header-date ">{/* <CurrentDate /> */}</span>
           <span className="px-3">
             <Clock />
           </span>
